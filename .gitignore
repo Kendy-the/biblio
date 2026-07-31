@@ -6,21 +6,12 @@ desktop.ini
 *.tmp
 ###< Global / OS ###
 
-###> IDE ###
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-.fleet/
-###< IDE ###
-
 ###> Environnement ###
 .env
 .env.*
 !.env.example
 !.env.*.example
 ###< Environnement ###
-
 
 # ===========================
 # Maven
@@ -150,21 +141,6 @@ mobile/*.aab
 mobile/*.ipa
 mobile/nativephp.log
 ###< NativePHP - Mobile ###
-
-###> NativePHP - Desktop (desktop/) ###
-desktop/vendor/
-desktop/storage/framework/
-desktop/storage/app/nativephp/
-desktop/build/
-desktop/dist/
-desktop/resources/native/
-desktop/*.dmg
-desktop/*.exe
-desktop/*.AppImage
-desktop/*.deb
-desktop/*.msi
-desktop/nativephp.log
-###< NativePHP - Desktop ###
 
 ###> Android / Gradle (si builds Android présents) ###
 **/*.iml
