@@ -1,0 +1,10 @@
+* text=auto eol=lf
+
+*.java diff=java
+*.json diff=json
+*.jar diff=jar
+*.md diff=markdown
+
+/.github export-ignore
+CHANGELOG.md export-ignore
+.styleci.yml export-ignore

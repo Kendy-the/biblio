@@ -1,0 +1,38 @@
+{
+    "App" : "Biblio",
+    "platform" : "windows",
+    "version" : "1.0.1",
+    "author" : "Ing. Presume",
+
+    "require" : {
+        "apache-maven-3.9.16" : "https://maven.apache.org/download.cgi?utm_source=chatgpt.com",
+        "wix311-binaries" : "https://github.com/wixtoolset/wix3/releases?utm_source=chatgpt.com"
+    },
+
+    "commande" : {
+        
+        "compile" : {
+            "env" : "prod",
+
+            "clean" : "mvn clean package",
+
+            "jdeps" : "jdeps --print-module-deps target\\biblio.jar",
+
+            "runtime" : "jlink --add-modules java.base,java.desktop,java.management,java.naming,java.security.sasl,java.sql,jdk.unsupported --output runtime --strip-debug --compress=2 --no-header-files --no-man-pages",
+
+            "distFolder" : "md dist copy target\\biblio.jar dist\\biblio.jar",
+
+            "wix (msi-setup)" : "jpackage --type msi --name Biblio --icon installer\\biblio.ico --vendor \"ing presume\" --copyright \"©biblio 2026\" --description \"Systeme de gestion de Bibliotheque\" --app-version 1.0 --input dist --main-jar biblio-1.0-SNAPSHOT.jar --main-class com.biblio.Main --runtime-image runtime --dest output --win-menu --win-shortcut --win-dir-chooser",
+
+            "app image (setup" : "jpackage --type app-image --name Biblio --input dist --main-jar biblio-1.0-SNAPSHOT.jar --main-class com.biblio.Main --runtime-image runtime --dest output"
+        },
+
+        "complie-update" : {
+            "env" : "prod",
+
+            "clean" : "mvn clean package",
+
+            "wix (msi-setup)" : "jpackage --type msi --name Biblio --icon installer\biblio.ico --vendor \"ing presume\" --copyright \"©biblio 2026\" --description \"Systeme de gestion de Bibliotheque\" --app-version 1.0.1 --input dist --main-jar biblio-1.0.1.jar --main-class com.biblio.Main --runtime-image runtime --dest output --win-menu --win-shortcut --win-dir-chooser"
+        }
+    }
+}

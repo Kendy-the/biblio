@@ -1,0 +1,4 @@
+- Ajout de l'Url analytics vers Kayotodo.
+- Ajout d'une route Api a l'app Kaytodo pour cette analytics
+- Traiter les datas
+- Ajout possibiliter de push un update automatique lorsque l'app est en connection internet

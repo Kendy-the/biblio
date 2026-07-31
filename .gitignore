@@ -1,0 +1,191 @@
+###> Global / OS ###
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+*.tmp
+###< Global / OS ###
+
+###> IDE ###
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.fleet/
+###< IDE ###
+
+###> Environnement ###
+.env
+.env.*
+!.env.example
+!.env.*.example
+###< Environnement ###
+
+
+# ===========================
+# Maven
+# ===========================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# Maven Wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# ===========================
+# Java
+# ===========================
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+replay_pid*
+
+**/runtime/
+**/dist/
+**/output/
+**/target/
+**/recorvery/
+**/versionning/
+run.bat
+
+# ===========================
+# Logs
+# ===========================
+*.log
+logs/
+
+# ===========================
+# Temporary files
+# ===========================
+*.tmp
+*.temp
+*.swp
+*.bak
+*.orig
+*~
+
+# ===========================
+# Package files
+# ===========================
+*.exe
+*.dll
+*.so
+*.dylib
+
+# ===========================
+# Application databases
+# (Décommentez si nécessaire)
+# ===========================
+# *.db
+# *.sqlite
+# *.sqlite3
+
+# ===========================
+# Generated documentation
+# ===========================
+site/
+apidocs/
+
+###> PHP / Composer (api/, mobile/, desktop/) ###
+**/vendor/
+**/composer.lock.bak
+###< PHP / Composer ###
+
+###> Laravel (commun à api/, mobile/, desktop/) ###
+**/bootstrap/cache/*.php
+!**/bootstrap/cache/.gitkeep
+**/storage/*.key
+**/storage/app/*
+!**/storage/app/public
+!**/storage/app/.gitignore
+**/storage/framework/cache/*
+!**/storage/framework/cache/.gitignore
+**/storage/framework/sessions/*
+!**/storage/framework/sessions/.gitignore
+**/storage/framework/testing/*
+!**/storage/framework/testing/.gitignore
+**/storage/framework/views/*
+!**/storage/framework/views/.gitignore
+**/storage/logs/*
+!**/storage/logs/.gitignore
+**/public/hot
+**/public/storage
+**/public/build/
+**/.phpunit.result.cache
+**/auth.json
+###< Laravel ###
+
+###> Node / Vue (web/) ###
+web/node_modules/
+web/dist/
+web/.vite/
+web/*.local
+web/coverage/
+###< Node / Vue ###
+
+###> Node commun (si build tools présents dans mobile/desktop aussi) ###
+**/node_modules/
+###< Node commun ###
+
+###> NativePHP - Mobile (mobile/) ###
+mobile/vendor/
+mobile/storage/framework/
+mobile/storage/app/nativephp/
+mobile/build/
+mobile/resources/native/android/
+mobile/resources/native/ios/
+mobile/*.apk
+mobile/*.aab
+mobile/*.ipa
+mobile/nativephp.log
+###< NativePHP - Mobile ###
+
+###> NativePHP - Desktop (desktop/) ###
+desktop/vendor/
+desktop/storage/framework/
+desktop/storage/app/nativephp/
+desktop/build/
+desktop/dist/
+desktop/resources/native/
+desktop/*.dmg
+desktop/*.exe
+desktop/*.AppImage
+desktop/*.deb
+desktop/*.msi
+desktop/nativephp.log
+###< NativePHP - Desktop ###
+
+###> Android / Gradle (si builds Android présents) ###
+**/*.iml
+**/.gradle/
+**/local.properties
+**/captures/
+**/.externalNativeBuild/
+**/.cxx/
+###< Android / Gradle ###
+
+###> iOS / Xcode (si builds iOS présents) ###
+**/*.xcworkspace/xcuserdata/
+**/Pods/
+**/*.xcarchive
+###< iOS / Xcode ###
+
+###> Divers ###
+**/.phpstorm.meta.php
+**/_ide_helper.php
+**/_ide_helper_models.php
+**/.idea
+**/npm-debug.log*
+**/yarn-error.log*
+###< Divers ###
